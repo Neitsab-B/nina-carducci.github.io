@@ -6,6 +6,7 @@
 	<title>Nina Carducci, photographe</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Portfolio de Nina Carducci, photographe professionnel sur Bordeaux.">
+	<meta name="theme-color" content="#F6D2B8">
 
 	<meta property="og:title" content="Nina Carducci">
 	<meta property="og:type" content="portfolio">
@@ -219,12 +220,35 @@
 			<div class="picture right">
 				<img sizes="(max-width: 72px) 100vw, 72px" src="./assets/images/camera.webp" alt="camera">
 			</div>
+			<div itemscope itemtype="https://schema.org/Person">
+				<br>
+				<div itemprop="address">Avenue Alsace-Lorraine, 33200 Bordeaux.</div>
+				<div itemprop="telephone">05 56 67 78 89.</div>
+				<div>Horaires de contact : de 10 h à 19 h</div>
+			</div>
 		</div>
 	</footer>
 	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
 	<script src="jquery-3.6.4.js"></script>
 	<script src="./assets/maugallery.js"></script>
 	<script src="./assets/scripts.js"></script>
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org/",
+			"@type": ["LocalBusiness", "Service"],
+			"name": "Nina Carducci",
+			"description": "Nina Carducci, photographe professionnelle à Bordeaux",
+			"telephone": "0556677889",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"addressLocality": "Bordeaux",
+				"postalCode": "33200",
+				"addressCountry": "FR"
+				},
+			"priceRange" : "50€ - 400€"
+		}
+	</script>
 </body>
 
 </html>
